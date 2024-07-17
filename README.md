@@ -59,7 +59,7 @@ Data is provided by The Cairnmillar Institute and includes extensive behavioral 
 
 This section synthesizes the findings from various stages of model evaluation and hyperparameter tuning, providing a clear overview of which models performed best and how different feature sets impacted the predictive performance.
 
-## 5.1 Best Hyperparameters
+## Best Hyperparameters
 
 The optimal hyperparameters for each model, selected based on achieving the highest F1-scores, are detailed as follows:
 
@@ -68,13 +68,13 @@ The optimal hyperparameters for each model, selected based on achieving the high
 - **XGBoost**: Configured with `colsample_bytree=0.161`, `gamma=0.068`, `learning_rate=0.565`, `max_depth=4`, `min_child_weight=3`, `reg_alpha=0.1`, and `n_estimators=173`.
 - **AdaBoost**: Found most effective with a `learning_rate of 0.671` and `n_estimators=289`.
 
-## 5.4 Determining the Best Prediction Model
+## Determining the Best Prediction Model
 
 The comprehensive evaluation of F1-scores across all feature sets showed that:
 - **Logistic Regression** emerged as the leading model in Feature Set 3, with the highest F1-score of `0.471`, indicative of its superior capability in handling a diverse range of features effectively.
 - Among ensemble methods, **XGBoost** followed closely with an F1-score of `0.452`, showcasing its strength in feature handling and prediction accuracy.
 
-## 5.5 Feature Importance
+## Feature Importance
 
 The analysis of feature importance in the XGBoost model highlighted several key predictors:
 - **Most Influential**: 'Education', 'Genre (Music/Dance)', and 'Anxiety Score' were among the top contributors to the model's predictive ability.
